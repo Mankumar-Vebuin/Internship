@@ -111,16 +111,18 @@ function handleFormData(e) {
     }
 
     if (input.name === "birthdate") {
-      let splitedDate = input.value.split("-");
-      let newDateFormate = `${splitedDate[0]}-${splitedDate[1]}-${splitedDate[2]}`;
       let currentDate = new Date().toISOString().split("T")[0];
 
-      if (new Date(newDateFormate) > new Date(currentDate)) {
+      if (new Date(input.value) > new Date(currentDate)) {
         errors.push("Invalid Birthdate");
         input.classList.add("input-error");
         valid = false;
         break;
       }
+
+      let [year, month, day] = input.value.split("-");
+      obj[input.name] = `${day}/${month}/${year}`;
+      continue;
     }
 
     if (input.type === "radio" && input.name === "gender") {
@@ -143,7 +145,7 @@ function handleFormData(e) {
   clearErrorMessage();
 
   if (editIndex !== null) {
-    userData[editingIndex] = { key: userData[editingIndex].key, ...obj };
+    userData[editIndex] = { key: userData[editIndex].key, ...obj };
     editIndex = null;
   } else {
     obj.key = (userData.length + 1).toString();
