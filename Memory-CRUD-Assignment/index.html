@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Memory CURD Assignment</title>
+  </head>
+  <body>
+    <h1 class="header">Memory CRUD Assignment</h1>
+    <div class="container">
+      <section class="user-form-container hidden">
+        <div class="close-btn-container">
+          <img
+            src="./assets//images/Cross.jpg"
+            alt="close"
+            class="close-form"
+          />
+        </div>
+        <form action="/index.html" method="post" class="user-form">
+          <div class="error-element"></div>
+          <label for="input-first-name">First Name:</label>
+          <input
+            type="text"
+            class="input-first-name"
+            id="input-first-name"
+            name="firstName"
+            value=""
+            required
+          />
+          <br />
+
+          <label for="input-Last-name">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            value=""
+            class="input-Last-name"
+            id="input-Last-name"
+            required
+          />
+          <br />
+
+          <label for="input-gender-male">Male:</label>
+          <input
+            type="radio"
+            name="gender"
+            class="input-gender"
+            id="input-gender-male"
+            value="male"
+            required
+          />
+          <label for="input-gender-female">Female:</label>
+          <input
+            type="radio"
+            name="gender"
+            class="input-gender"
+            id="input-gender-female"
+            value="female"
+            required
+          />
+
+          <br />
+
+          <label for="input-hobby">Hobby:</label>
+          <input
+            type="text"
+            name="hobby"
+            value=""
+            class="input-hobby"
+            id="input-hobby"
+            required
+          />
+          <br />
+
+          <label for="input-birthdate">Birthdate:</label>
+          <input
+            type="date"
+            class="input-birthdate"
+            id="input-birthdate"
+            name="birthdate"
+            value=""
+            required
+          /><label for="input-first-name"></label>
+          <br />
+
+          <label for="input-mobile-no">Mobile No:</label>
+          <input
+            type="number"
+            name="mobileNo"
+            value=""
+            class="input-mobile-no"
+            id="input-mobile-no"
+            required
+          />
+          <br />
+          <div class="submit-button-container">
+            <button class="submit-form" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <div class="user-data-container">
+        <!-- <div class="user-card">
+        <img class="avatar" src="./assets/images/img_avatar.png" alt="Avatar" style="width: 100%" />
+        <div class="user-details-container">
+          <p class="detail first-name last-name">fdada</p>
+          <p class="detail gender">fdsa</p>
+          <p class="detail hobby">fdas</p>
+          <p class="detail birthdate">fdafda</p>
+          <p class="detail mobile-no">fda</p>
+        </div>
+      </div> -->
+      </div>
+    </div>
+    <button class="add-user">+</button>
+
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
