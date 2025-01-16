@@ -6,45 +6,46 @@ var userData = [
     gender: "male",
     hobby: "Vollyaball",
     birthdate: "24/09/2003",
-    mobileNo: "9265755899",
+    mobileNo: "0000000000",
   },
   {
     key: "2",
-    firstName: "Mann",
-    lastName: "Mendapara",
+    firstName: "Anurag",
+    lastName: "Dalsaniya",
     gender: "male",
     hobby: "Vollyaball",
-    birthdate: "24/09/2003",
-    mobileNo: "9265755899",
+    birthdate: "12/02/2004",
+    mobileNo: "1254796235",
   },
   {
     key: "3",
-    firstName: "Mann",
-    lastName: "Mendapara",
+    firstName: "Hetvi",
+    lastName: "Godhani",
     gender: "Female",
-    hobby: "Vollyaball",
-    birthdate: "24/09/2003",
-    mobileNo: "9265755899",
+    hobby: "Movies and Series",
+    birthdate: "05/01/2004",
+    mobileNo: "4866579298",
   },
   {
     key: "4",
-    firstName: "Mann",
-    lastName: "Mendapara",
+    firstName: "Jaivin",
+    lastName: "Savaliya",
     gender: "male",
-    hobby: "Vollyaball",
+    hobby: "Reading",
     birthdate: "24/09/2003",
-    mobileNo: "9265755899",
+    mobileNo: "4596566651",
   },
   {
     key: "5",
-    firstName: "Mann",
-    lastName: "Mendapara",
+    firstName: "Priyanka",
+    lastName: "Lalakiya",
     gender: "Female",
-    hobby: "Vollyaball",
-    birthdate: "24/09/2003",
-    mobileNo: "9265755899",
+    hobby: "Yoga",
+    birthdate: "04/04/2004",
+    mobileNo: "1111111111",
   },
 ];
+
 var editIndex = null;
 
 renderCards();
@@ -55,15 +56,17 @@ let userForm = document.querySelector(".user-form");
 let SubmitButton = document.querySelector(".submit-form");
 let errorElement = document.querySelector(".error-element");
 let CloseButton = document.querySelector(".close-btn-container");
+let searchElement = document.querySelector(".search");
 
 addUserButton.addEventListener("click", handleButtonToggle);
 userForm.addEventListener("submit", handleFormData);
 CloseButton.addEventListener("click", handleButtonToggle);
+searchElement.addEventListener("input", handleSearch);
 
-function renderCards() {
+function renderCards(RenderUserData = userData) {
   let userDataContainer = document.querySelector(".user-data-container");
   userDataContainer.innerHTML = "";
-  userData.forEach((user, i) => {
+  RenderUserData.forEach((user, i) => {
     let element = document.createElement("div");
     element.classList.add("user-card");
     let imagetype =
@@ -195,7 +198,7 @@ function handleEditCard(i) {
 
   if (element.gender === "male") {
     maleGenderInputElement.checked = true;
-  } else if (element.gender === "female") {
+  } else {
     femaleGenderInputElement.checked = true;
   }
 
@@ -203,6 +206,31 @@ function handleEditCard(i) {
 
   const [day, month, year] = element.birthdate.split("/");
   birthdateInputElement.value = `${year}-${month}-${day}`;
+  console.log(birthdateInputElement.value);
 
   mobileNoInputElement.value = element.mobileNo;
 }
+
+function handleSearch(e) {
+  showFilteredusers(e.target.value);
+}
+
+function debounce(cb, delay = 1000) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      cb(...args);
+    }, delay);
+  };
+}
+
+const showFilteredusers = debounce((input) => {
+  let text = input.toLowerCase();
+  let FilteredUserData = userData.filter((user) => {
+    let firstname = user.firstName.toLowerCase().includes(text);
+    let secondname = user.lastName.toLowerCase().includes(text);
+    if (firstname || secondname) return user;
+  });
+  renderCards(FilteredUserData);
+});

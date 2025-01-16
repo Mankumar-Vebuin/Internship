@@ -39,15 +39,44 @@ image {
 }
 
 /* Page Styling */
-
 .container {
   padding: 2rem 3rem;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .header {
   text-align: center;
   margin: 3rem 0px 2rem 0px;
   color: #2f3640;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #01101f;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search-wrapper .search {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid #01101f;
+  margin: 0.75rem 0rem;
+  font-size: 1rem;
 }
 
 .user-data-container {
@@ -117,7 +146,7 @@ image {
   right: 0;
   height: 25px;
   width: 25px;
-  background-color: transparent; 
+  background-color: transparent;
   border: 0px;
 }
 
@@ -135,7 +164,7 @@ image {
   left: 0;
   height: 22px;
   width: 22px;
-  background-color: transparent; 
+  background-color: transparent;
   border: 0px;
 }
 
@@ -233,4 +262,18 @@ image {
 .input-error {
   background-color: rgb(210, 57, 57);
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .search-wrapper {
+    font-size: 1.3rem;
+  }
+
+  .user-data-container {
+    grid-template-columns: repeat(auto-fit, 260px);
+  }
 }
