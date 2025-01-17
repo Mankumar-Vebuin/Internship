@@ -93,8 +93,13 @@ function renderCards(RenderUserData = userData) {
   });
 }
 
-function handleButtonToggle() {
+function handleButtonToggle(e) {
   userFormSection.classList.toggle("hidden");
+  if (!userFormSection.classList.contains("hidden")) {
+    userForm.reset();
+    clearErrorMessage();
+    editIndex = null;
+  }
 }
 
 function handleFormData(e) {
@@ -109,6 +114,9 @@ function handleFormData(e) {
     if (input.name === "mobileNo" && input.value.length !== 10) {
       errors.push("Invalid Phone Number");
       input.classList.add("input-error");
+      setTimeout(() => {
+        input.classList.remove("input-error");
+      }, 3000);
       valid = false;
       break;
     }
@@ -119,6 +127,9 @@ function handleFormData(e) {
       if (new Date(input.value) > new Date(currentDate)) {
         errors.push("Invalid Birthdate");
         input.classList.add("input-error");
+        setTimeout(() => {
+          input.classList.remove("input-error");
+        }, 3000);
         valid = false;
         break;
       }
