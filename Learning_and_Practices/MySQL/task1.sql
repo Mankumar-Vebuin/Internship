@@ -300,4 +300,45 @@ WHERE hire_date <= CURDATE() - INTERVAL 2 YEAR;
 select * from employee where job_title = "Manager" and year(hire_date) = 2003;
 
 -- 30
+SELECT CONCAT(emp_name, ' ', job_title) AS name_and_job FROM Employee;
+
+-- 31
+select lpad(emp_name,15," ") as right_align_name from employee;
+
+-- 32
+select lpad(emp_name,15,"*") as right_padding from employee;
+
+-- 33
+select emp_name from employee where emp_name not like "A%";
+
+-- 34
+select emp_name from  employee where emp_name not like "%R";
+
+-- 35
+SELECT CONCAT(SUBSTRING(emp_name, 1, 3), ' ', SUBSTRING(emp_name, LENGTH(emp_name) - 2, 3)) AS first_last_3 FROM Employee;
+
+-- 36
+select replace(emp_name, 'a', 'A') from employee;
+
+-- 37
+select emp_name,instr(emp_name, "ar") as possition from employee;
+
+-- 38
+select floor((salary + 999) / 1000) * 1000 from employee;
+
+-- 39
+select * from employee order by job_title, salary desc;
+
+-- 40
+select * from employee E join department D on E.dept_no = D.dept_no where E.hire_date <= CURDATE() - INTERVAL 1 YEAR;
+
+-- 41
+SELECT emp_name, job_title, salary
+FROM Employee
+ORDER BY job_title DESC, salary ASC;
+
+-- 42
+select * from employee where year(hire_date) = 2003 order by month(hire_date), day(hire_date);
+
+
 
