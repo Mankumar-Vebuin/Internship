@@ -1,0 +1,178 @@
+use ecommercedb;
+
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE,
+    phone_no VARCHAR(10) UNIQUE, 
+    full_name VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    referral_code VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean
+);
+
+INSERT INTO Users (email, phone_no, full_name, password, referral_code) 
+VALUES (NULL, '1234567890', 'Matias Duarte', 'hashed_password', NULL);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    icon_url VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean
+);
+
+INSERT INTO Categories (name, icon_url)
+VALUES
+    ('Foods', 'path/to/foods_icon.png'),
+    ('Gift', 'path/to/gift_icon.png'),
+    ('Fashion', 'path/to/fashion_icon.png'),
+    ('Gadget', 'path/to/gadget_icon.png'),
+    ('Computer', 'path/to/computer_icon.png'),
+    ('Souvenir', 'path/to/souvenir_icon.png');
+    
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+	category int,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(15, 2) NOT NULL,
+    rating DECIMAL(3, 2),
+    reviews_count INT DEFAULT 0,
+    description TEXT,
+    available_stock INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    FOREIGN KEY (category) REFERENCES categories(id)
+);
+
+INSERT INTO Products (category, name, price, rating, reviews_count, description, available_stock)
+VALUES (
+	1,
+    'TMA–2HD Wireless',
+    1500000,
+    4.6,
+    86,
+    'The speaker unit contains a diaphragm that is precision-grown from NAC Audio bio-cellulose, making it stiffer, lighter, and stronger than regular PET speaker units...',
+    250
+);
+
+
+create table product_images (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    product int not null,
+    icon_url VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    FOREIGN KEY (product) REFERENCES products(id)
+);
+
+create table product_items (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    product int not null,
+    color varchar(20),
+    type varchar(30),
+    prise decimal(15,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    FOREIGN KEY (product) REFERENCES products(id)
+);
+
+insert into product_items (product, color, type, prise) values (1, "Black", "Headphone", 1000);
+insert into product_items (product, color, type, prise) values (1, "red", "Headphone", 1000);
+insert into product_items (product, color, type, prise) values (1, "white", "Headphone", 1000);
+
+create table reviews (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    user int not null,
+    product int not null,
+    description text not null,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    -- FOREIGN KEY (m_user) REFERENCES m_users(user_id),
+    -- FOREIGN KEY (product) REFERENCES products(id)
+);
+
+insert into reviews (user, product, description) values (1,1,"Very Good Product");
+
+create table whishlist (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    user int not null,
+    product int not null,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    -- FOREIGN KEY (m_user) REFERENCES m_users(user_id),
+    -- FOREIGN KEY (product) REFERENCES products(id)
+);
+
+create table cart (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    user int not null,
+    product int not null,
+    quantity int not null,
+    address varchar(200) not null,
+    total_amount decimal(15,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    -- FOREIGN KEY (m_user) REFERENCES m_users(user_id),
+    -- FOREIGN KEY (product) REFERENCES products(id)
+);
+
+create table orders (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    user int not null,
+    product int not null,
+    address varchar(200) not null,
+    total_amount decimal(15,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean,
+    -- FOREIGN KEY (m_user) REFERENCES m_users(user_id),
+    -- FOREIGN KEY (product) REFERENCES products(id)
+);
+
+create table news(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    title varchar(100) not null,
+    description varchar(300) not null,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(50),
+    updated_by VARCHAR(50),
+    is_deleted boolean
+);
+
+
+
+
+
+
+
+
+    
+
+
