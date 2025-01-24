@@ -95,5 +95,16 @@ select concat(first_name, " ", last_name) as COMPLETE_NAME from worker;
 select * from worker order by first_name asc, DEPARTMENT desc;
 
 -- 16
-select * from worker where FIRST_NAME != "Vipul" AND FIRST_NAME != "Satish";
+select * from worker where FIRST_NAME not in ('Vipul', 'Satish');
 
+-- 17
+select now();
+
+-- 18
+select distinct salary from worker order by salary desc limit 1,1;
+
+-- 19
+select * from worker union all select * from worker group by WORKER_ID;
+
+-- 20
+select * from worker w join bonus b on w.WORKER_ID = b.WORKER_REF_ID;
