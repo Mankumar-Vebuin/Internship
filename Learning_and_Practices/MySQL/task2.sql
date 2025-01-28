@@ -107,4 +107,4 @@ select distinct salary from worker order by salary desc limit 1,1;
 select * from worker union all select * from worker group by WORKER_ID;
 
 -- 20
-select * from worker w join bonus b on w.WORKER_ID = b.WORKER_REF_ID;
+select distinct * from worker w join bonus b on w.WORKER_ID = b.WORKER_REF_ID;

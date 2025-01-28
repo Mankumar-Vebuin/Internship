@@ -60,14 +60,10 @@ WHERE
         AND E.salary > 10000;
 
 -- 2
-SELECT 
-    *
-FROM
-    Employee E
-        JOIN
-    Department D ON E.dept_no = D.dept_no
-WHERE
-    D.dept_no = 30;
+SELECT * 
+FROM Employee E 
+LEFT JOIN Department D ON E.dept_no = D.dept_no
+WHERE D.dept_no = 30;
 
 -- 3
 SELECT 
@@ -80,15 +76,11 @@ WHERE
     E.job_title = 'Clerk';
 
 -- 4
-SELECT 
-    D.dept_no, E.emp_name
-FROM
-    Employee E
-        JOIN
-    Department D ON E.dept_no = D.dept_no
-WHERE
-    D.dept_no > 20
-ORDER BY E.dept_no ASC;
+SELECT D.dept_no, E.emp_name
+FROM Employee E 
+RIGHT JOIN Department D ON E.dept_no = D.dept_no
+WHERE D.dept_no > 20
+ORDER BY D.dept_no ASC;	
 
 -- 5
 SELECT 
@@ -107,24 +99,17 @@ WHERE
     commission > salary * 0.6;
 
 -- 7
-SELECT 
-    emp_name, job_title, salary
-FROM
-    employee E
-        JOIN
-    department D ON E.dept_no = D.dept_no
-WHERE
-    D.dept_no = 20 AND E.salary > 2000;
+SELECT emp_name, job_title, salary
+FROM Employee
+WHERE dept_no = (SELECT dept_no FROM Department WHERE dept_no = 20) 
+  AND salary > 2000;
+
 
 -- 8
-SELECT 
-    emp_name, job_title, salary
-FROM
-    employee E
-        JOIN
-    department D ON E.dept_no = D.dept_no
-WHERE
-    D.dept_no = 30 AND E.salary > 1500;
+SELECT emp_name, job_title, salary
+FROM Employee
+WHERE dept_no = (SELECT dept_no FROM Department WHERE dept_no = 30) 
+  AND salary > 1500;
 
 -- 9
 SELECT 
@@ -136,38 +121,22 @@ WHERE
         OR job_title = 'President';
 
 -- 10
-SELECT 
-    *
-FROM
-    employee E
-        JOIN
-    department D ON E.dept_no = D.dept_no
-WHERE
-    E.job_title = 'Manager'
-        AND D.dept_no != 30;
+SELECT * 
+FROM Employee E 
+LEFT JOIN Department D ON E.dept_no = D.dept_no
+WHERE E.job_title = 'Manager' AND D.dept_no != 30;
 
 -- 11
-SELECT 
-    *
-FROM
-    employee E
-        JOIN
-    department D ON E.dept_no = D.dept_no
-WHERE
-    (E.job_title = 'Manager'
-        OR E.job_title = 'Clerk')
-        AND D.dept_no = 10;
+SELECT * 
+FROM Employee
+WHERE job_title IN ('Manager', 'Clerk') 
+  AND dept_no = (SELECT dept_no FROM Department WHERE dept_no = 10);
 
 -- 12
-SELECT 
-    *
-FROM
-    employee E
-        JOIN
-    department D ON E.dept_no = D.dept_no
-WHERE
-    E.job_title = 'Manager'
-        OR (E.job_title = 'Clerk' AND D.dept_no = 10);
+SELECT * 
+FROM Employee
+WHERE job_title = 'Manager' 
+   OR (job_title = 'Clerk' AND dept_no = (SELECT dept_no FROM Department WHERE dept_no = 10));
 
 -- 13
 SELECT 
@@ -246,17 +215,12 @@ WHERE
         OR E.commission < 100;
 
 -- 21
-SELECT 
-    emp_id,
-    emp_name,
-    salary,
-    commission,
-    CASE
-        WHEN commission = 0 OR commission IS NULL THEN salary + 250
-        ELSE salary + commission
-    END AS net_earnings
-FROM
-    Employee;
+SELECT emp_id, emp_name, salary, commission,
+       CASE
+           WHEN commission = 0 OR commission IS NULL THEN salary + 250
+           ELSE salary + commission
+       END AS net_earnings
+FROM Employee;
 
 -- 22
 SELECT 
@@ -277,10 +241,14 @@ where
     END > 2000;
     
 -- 23
-select * from employee where emp_name like "M%" or "%M";
+SELECT * 
+FROM Employee
+WHERE emp_name LIKE 'M%' OR emp_name LIKE '%M';
 
 -- 25
-select *, length(emp_name) from employee where length(emp_name) > 15 AND emp_name like "__R%";
+SELECT *, LENGTH(emp_name) 
+FROM Employee
+WHERE LENGTH(emp_name) > 15 AND emp_name LIKE '__R%';
 
 -- 24
 select * from employee where emp_name like "%M%" or "%m%";
@@ -289,7 +257,10 @@ select * from employee where emp_name like "%M%" or "%m%";
 select * from employee where month(hire_date) = 2;
 
 -- 27
-select * from employee where (day(hire_date) = 30 or day(hire_date) = 31) OR (month(hire_date) = 2 AND day(hire_date) = 28);
+SELECT * 
+FROM Employee
+WHERE (DAY(hire_date) IN (30, 31)) 
+   OR (MONTH(hire_date) = 2 AND DAY(hire_date) = 28);
 
 -- 28
 SELECT emp_name, hire_date
@@ -333,12 +304,18 @@ select * from employee order by job_title, salary desc;
 select * from employee E join department D on E.dept_no = D.dept_no where E.hire_date <= CURDATE() - INTERVAL 1 YEAR;
 
 -- 41
-SELECT emp_name, job_title, salary
-FROM Employee
-ORDER BY job_title DESC, salary ASC;
+SELECT 
+    emp_name, job_title, salary
+FROM
+    Employee
+ORDER BY job_title DESC , salary ASC;
 
 -- 42
-select * from employee where year(hire_date) = 2003 order by month(hire_date), day(hire_date);
+SELECT * 
+FROM Employee
+WHERE YEAR(hire_date) = 2003
+ORDER BY MONTH(hire_date), DAY(hire_date);
+
 
 
 

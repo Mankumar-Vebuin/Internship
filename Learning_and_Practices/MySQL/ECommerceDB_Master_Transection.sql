@@ -74,7 +74,7 @@ create table m_product_images (
     FOREIGN KEY (product) REFERENCES m_products(id)
 );
 
-create table m_product_items (
+create table t_product_items (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     product int not null,
     color varchar(20),
@@ -138,7 +138,7 @@ create table t_orders (
     FOREIGN KEY (product) REFERENCES m_products(id)
 );
 
-create table news(
+create table m_news(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     title varchar(100) not null,
     description varchar(300) not null,
