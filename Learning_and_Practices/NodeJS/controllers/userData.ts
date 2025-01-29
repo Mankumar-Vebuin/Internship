@@ -5,12 +5,12 @@ export async function addUser(req: Request, res: Response) {
   const { name, email } = req.body;
 
   if (!name) {
-     res.status(400).json({ error: "Name cannot be empty" });
-     return;
+    res.status(400).json({ error: "Name cannot be empty" });
+    return;
   }
   if (!email) {
-     res.status(400).json({ error: "Email cannot be empty" });
-     return;
+    res.status(400).json({ error: "Email cannot be empty" });
+    return;
   }
 
   try {
@@ -20,12 +20,10 @@ export async function addUser(req: Request, res: Response) {
     const [result]: any = await DB.query(insertQuery, values);
 
     if (result.affectedRows === 1) {
-      res
-        .status(201)
-        .json({
-          message: "User Created Successfully",
-          userId: result.insertId,
-        });
+      res.status(201).json({
+        message: "User Created Successfully",
+        userId: result.insertId,
+      });
     } else {
       res.status(500).json({ error: "Failed to create user" });
     }
@@ -49,8 +47,19 @@ export async function addUser(req: Request, res: Response) {
 // }
 
 export async function getUsers(req: Request, res: Response) {
+  const page = parseInt(req.query.page as string) ? parseInt(req.query.page as string) : 0; 
+  const limit = parseInt(req.query.limit as string) ? parseInt(req.query.limit as string) : 10;
+
+  console.log(page,limit);
+  
+
+  const start = (page - 1) * limit;
+
   try {
-    const [rows] = await DB.query("SELECT * FROM users");
+    const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [
+      limit,
+      start,
+    ]);
     res.json(rows);
   } catch (error) {
     console.error("Error fetching users:", error);
@@ -116,8 +125,8 @@ export function getUserByName(req: Request, res: Response) {
   console.log(name);
 }
 
-export async function deleteUser(req: Request, res: Response){
-    const { id } = req.params;
+export async function deleteUser(req: Request, res: Response) {
+  const { id } = req.params;
 
   if (!id) {
     res.status(400).json({ error: "User ID is required" });
@@ -129,10 +138,10 @@ export async function deleteUser(req: Request, res: Response){
     const [result]: any = await DB.query(deleteQuery, [id]);
 
     if (result.affectedRows === 0) {
-    res.status(404).json({ error: "User not found" });
+      res.status(404).json({ error: "User not found" });
     }
 
-   res.status(200).json({ message: "User deleted successfully" });
+    res.status(200).json({ message: "User deleted successfully" });
   } catch (error) {
     console.error("Error deleting user:", error);
     res.status(500).json({ error: "Database error occurred" });
