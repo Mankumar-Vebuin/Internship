@@ -1,16 +1,15 @@
 import { Router } from 'express';
-import { addUser, getUsers, getUserById, updateUser, getUserByName, deleteUser } from '../controllers/userData.ts';
+import { addUser, getUsers, getUserById, updateUser, deleteUser } from '../controllers/userData.ts';
 
 const router = Router();
 
 router.get('/', getUsers);
 router.get('/:id', getUserById);
 
-router.put('/updateUser/:id', updateUser);
+router.patch('/:id', updateUser);
 
-router.post('/addUser', addUser);
-router.post('/', getUserByName); // for query parameter;
+router.post('/', addUser);
 
-router.delete('/deleteUser/:id', deleteUser)
+router.delete('/:id', deleteUser)
 
 export default router;

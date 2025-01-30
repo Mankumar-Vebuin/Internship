@@ -47,25 +47,56 @@ export async function addUser(req: Request, res: Response) {
 // }
 
 export async function getUsers(req: Request, res: Response) {
-  const page = parseInt(req.query.page as string) ? parseInt(req.query.page as string) : 0; 
-  const limit = parseInt(req.query.limit as string) ? parseInt(req.query.limit as string) : 10;
-
-  console.log(page,limit);
-  
-
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = parseInt(req.query.limit as string) || 10;
+  const name = req.query.name as string;
   const start = (page - 1) * limit;
 
   try {
-    const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [
-      limit,
-      start,
-    ]);
-    res.json(rows);
+    if (!name) {
+      // Fetch total user count
+      const [countResult]: any = await DB.query("SELECT COUNT(*) as total FROM users");
+      const totalUsers = countResult[0].total;
+
+      // Fetch users with pagination
+      const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [limit, start]);
+
+      res.json({
+        totalUsers,
+        totalPages: Math.ceil(totalUsers / limit),
+        currentPage: page,
+        users: rows,
+      });
+    } else {
+      // Fetch total user count for the given name
+      const [countResult]: any = await DB.query("SELECT COUNT(*) as total FROM users WHERE name = ?", [name]);
+      const totalUsers = countResult[0].total;
+
+      if (totalUsers === 0) {
+        res.status(404).json({ error: "User not found" });
+        return;
+      }
+
+      // Fetch paginated users with the given name
+      const [rows]: any = await DB.query("SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?", [
+        name,
+        limit,
+        start,
+      ]);
+
+      res.json({
+        totalUsers,
+        totalPages: Math.ceil(totalUsers / limit),
+        currentPage: page,
+        users: rows,
+      });
+    }
   } catch (error) {
     console.error("Error fetching users:", error);
     res.status(500).json({ error: "Failed to fetch users" });
   }
 }
+
 
 // export function getUserById(req: Request, res:Response) {
 //     const id = req.params.id;
@@ -117,12 +148,6 @@ export async function updateUser(req: Request, res: Response) {
     console.error("Error updating user:", error);
     res.status(500).json({ error: "Failed to update user" });
   }
-}
-
-export function getUserByName(req: Request, res: Response) {
-  const name = req.query.name;
-  res.send(name);
-  console.log(name);
 }
 
 export async function deleteUser(req: Request, res: Response) {
