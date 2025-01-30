@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import DB from "../db/dbConnection.ts";
+import { CustomRequest } from "../types/interfaces.ts";
 
 export async function addUser(req: Request, res: Response) {
   const { name, email } = req.body;
@@ -55,11 +56,16 @@ export async function getUsers(req: Request, res: Response) {
   try {
     if (!name) {
       // Fetch total user count
-      const [countResult]: any = await DB.query("SELECT COUNT(*) as total FROM users");
+      const [countResult]: any = await DB.query(
+        "SELECT COUNT(*) as total FROM users"
+      );
       const totalUsers = countResult[0].total;
 
       // Fetch users with pagination
-      const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [limit, start]);
+      const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [
+        limit,
+        start,
+      ]);
 
       res.json({
         totalUsers,
@@ -69,7 +75,10 @@ export async function getUsers(req: Request, res: Response) {
       });
     } else {
       // Fetch total user count for the given name
-      const [countResult]: any = await DB.query("SELECT COUNT(*) as total FROM users WHERE name = ?", [name]);
+      const [countResult]: any = await DB.query(
+        "SELECT COUNT(*) as total FROM users WHERE name = ?",
+        [name]
+      );
       const totalUsers = countResult[0].total;
 
       if (totalUsers === 0) {
@@ -78,11 +87,10 @@ export async function getUsers(req: Request, res: Response) {
       }
 
       // Fetch paginated users with the given name
-      const [rows]: any = await DB.query("SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?", [
-        name,
-        limit,
-        start,
-      ]);
+      const [rows]: any = await DB.query(
+        "SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?",
+        [name, limit, start]
+      );
 
       res.json({
         totalUsers,
@@ -97,6 +105,58 @@ export async function getUsers(req: Request, res: Response) {
   }
 }
 
+export async function getUsersPaginatedByMiddleware(
+  req: CustomRequest,
+  res: Response
+) {
+  const { page, limit, start } = req.pagination!;
+  const name = req.query.name as string;
+  try {
+    if (!name) {
+      const [countResult]: any = await DB.query(
+        "SELECT COUNT(*) as total FROM users"
+      );
+      const totalUsers = countResult[0].total;
+
+      const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [
+        limit,
+        start,
+      ]);
+
+      res.json({
+        totalUsers,
+        totalPages: Math.ceil(totalUsers / limit),
+        currentPage: page,
+        users: rows,
+      });
+    } else {
+      const [countResult]: any = await DB.query(
+        "SELECT COUNT(*) as total FROM users WHERE name = ?",
+        [name]
+      );
+      const totalUsers = countResult[0].total;
+
+      if (totalUsers === 0) {
+        res.status(404).json({ error: "User not found" });
+      }
+
+      const [rows]: any = await DB.query(
+        "SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?",
+        [name, limit, start]
+      );
+
+      res.json({
+        totalUsers,
+        totalPages: Math.ceil(totalUsers / limit),
+        currentPage: page,
+        users: rows,
+      });
+    }
+  } catch (error) {
+    console.error("Error fetching users:", error);
+    res.status(500).json({ error: "Failed to fetch users" });
+  }
+}
 
 // export function getUserById(req: Request, res:Response) {
 //     const id = req.params.id;
