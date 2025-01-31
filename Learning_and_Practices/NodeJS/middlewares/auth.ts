@@ -1,10 +1,11 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
+import { TokenRequest, User } from "../types/interfaces.ts";
 
 const SECRET_KEY = process.env.SECRET_KEY ?? "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 
 export default function authenticateJWT(
-  req: any,
+  req: TokenRequest,
   res: Response,
   next: NextFunction
 ) {
@@ -16,8 +17,7 @@ export default function authenticateJWT(
   }
 
   try {
-    const decoded = jwt.verify(token, SECRET_KEY);
-
+    const decoded = jwt.verify(token, SECRET_KEY) as User;
     req.user = decoded;
     next();
   } catch (error) {

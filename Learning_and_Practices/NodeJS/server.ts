@@ -1,10 +1,12 @@
 import express, { urlencoded } from "express";
 import dotenv from "dotenv";
-import path from 'path'
 import cors from 'cors'
 
 import userRouter from './Routes/userRoute.ts';
 import authRoutes from './Routes/authRoute.ts'
+import { CustomError } from "./types/interfaces.ts";
+
+import { errorHandling } from "./middlewares/errorHandling.ts";
 
 dotenv.config();
 const app = express();
@@ -17,6 +19,16 @@ app.use(express.static("public"));
 
 app.use('/user', userRouter);
 app.use("/auth", authRoutes);
+
+app.all("*", (req, res, next) => {
+  const err:CustomError = new Error("Can't find this Route");
+  err.status = 'fail';
+  err.statusCode = 404;
+
+  next(err)
+})
+
+app.use(errorHandling);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

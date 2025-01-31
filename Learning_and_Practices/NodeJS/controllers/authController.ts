@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import DB from "../db/dbConnection.ts";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { ResultSetHeader, RowDataPacket } from "mysql2/promise";
 
 // Register a new user
 export async function registerUser(req: Request, res: Response) {
@@ -15,7 +16,7 @@ export async function registerUser(req: Request, res: Response) {
   const hashedPassword = await bcrypt.hash(password, 10);
 
   try {
-    const [result]: any = await DB.query(
+    const [result] = await DB.query<ResultSetHeader>(
       "INSERT INTO consumers ( email, password) VALUES (?, ?)",
       [email, hashedPassword]
     );

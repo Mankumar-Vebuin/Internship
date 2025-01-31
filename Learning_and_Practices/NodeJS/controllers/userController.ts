@@ -1,6 +1,9 @@
 import { Request, Response } from "express";
 import DB from "../db/dbConnection.ts";
 import { CustomRequest } from "../types/interfaces.ts";
+import { ResultSetHeader, RowDataPacket } from "mysql2/promise";
+
+
 
 export async function addUser(req: Request, res: Response) {
   const { name, email } = req.body;
@@ -18,7 +21,7 @@ export async function addUser(req: Request, res: Response) {
     const insertQuery = "INSERT INTO users (name, email) VALUES (?, ?)";
     const values = [name, email];
 
-    const [result]: any = await DB.query(insertQuery, values);
+    const [result] = await DB.query<ResultSetHeader>(insertQuery, values);
 
     if (result.affectedRows === 1) {
       res.status(201).json({
@@ -56,7 +59,7 @@ export async function getUsers(req: Request, res: Response) {
   try {
     if (!name) {
       // Fetch total user count
-      const [countResult]: any = await DB.query(
+      const [countResult] = await DB.query<RowDataPacket[]>(
         "SELECT COUNT(*) as total FROM users"
       );
       const totalUsers = countResult[0].total;
@@ -75,7 +78,7 @@ export async function getUsers(req: Request, res: Response) {
       });
     } else {
       // Fetch total user count for the given name
-      const [countResult]: any = await DB.query(
+      const [countResult] = await DB.query<RowDataPacket[]>(
         "SELECT COUNT(*) as total FROM users WHERE name = ?",
         [name]
       );
@@ -87,7 +90,7 @@ export async function getUsers(req: Request, res: Response) {
       }
 
       // Fetch paginated users with the given name
-      const [rows]: any = await DB.query(
+      const [rows] = await DB.query<ResultSetHeader>(
         "SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?",
         [name, limit, start]
       );
@@ -113,12 +116,12 @@ export async function getUsersPaginatedByMiddleware(
   const name = req.query.name as string;
   try {
     if (!name) {
-      const [countResult]: any = await DB.query(
+      const [countResult] = await DB.query<RowDataPacket[]>(
         "SELECT COUNT(*) as total FROM users"
       );
       const totalUsers = countResult[0].total;
 
-      const [rows] = await DB.query("SELECT * FROM users LIMIT ? OFFSET ?", [
+      const [rows] = await DB.query<ResultSetHeader>("SELECT * FROM users LIMIT ? OFFSET ?", [
         limit,
         start,
       ]);
@@ -130,7 +133,7 @@ export async function getUsersPaginatedByMiddleware(
         users: rows,
       });
     } else {
-      const [countResult]: any = await DB.query(
+      const [countResult] = await DB.query<RowDataPacket[]>(
         "SELECT COUNT(*) as total FROM users WHERE name = ?",
         [name]
       );
@@ -140,7 +143,7 @@ export async function getUsersPaginatedByMiddleware(
         res.status(404).json({ error: "User not found" });
       }
 
-      const [rows]: any = await DB.query(
+      const [rows] = await DB.query<ResultSetHeader>(
         "SELECT * FROM users WHERE name = ? LIMIT ? OFFSET ?",
         [name, limit, start]
       );
@@ -220,7 +223,7 @@ export async function deleteUser(req: Request, res: Response) {
 
   try {
     const deleteQuery = "DELETE FROM users WHERE id = ?";
-    const [result]: any = await DB.query(deleteQuery, [id]);
+    const [result] = await DB.query<ResultSetHeader>(deleteQuery, [id]);
 
     if (result.affectedRows === 0) {
       res.status(404).json({ error: "User not found" });
