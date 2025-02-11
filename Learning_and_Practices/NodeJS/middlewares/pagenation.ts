@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import { Response, NextFunction } from "express";
 import { CustomRequest } from "../types/interfaces.ts";
 
 export default function paginationMiddleware(req: CustomRequest, res: Response, next: NextFunction) {

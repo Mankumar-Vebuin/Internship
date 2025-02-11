@@ -1,9 +1,10 @@
-const { Sequelize, DataTypes } = require("sequelize");
-const sequelize = new Sequelize("sqlite::memory:");
+import { DataTypes } from "sequelize";
+import { sequelize } from "../db/dbOrm.ts";
 
 const Orm_User = sequelize.define(
   "Orm_User",
   {
+    id: DataTypes.NUMBER,
     firstName: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -13,12 +14,10 @@ const Orm_User = sequelize.define(
     },
   },
   {
-    sequelize,
     modelName: "Orm_User",
-    tableName: "orm_user"
+    tableName: "orm_user",
   }
 );
 
-Orm_User.sync({force: true})
 
-console.log(Orm_User === sequelize.models.Orm_User);
+export { Orm_User };

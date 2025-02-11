@@ -1,0 +1,41 @@
+type ENV = {
+  PORT: number
+}
+
+const getNumber=(val:string) =>{
+  if(val === undefined){
+    return val
+  }
+  return Number(process.env[val])
+}
+
+export const env: ENV = {
+  PORT: getNumber("PORT")
+}
+
+/// port
+export type UseRepositoryPort = {
+  getAll(id: number, name: string): Promise<User[]> 
+  getById(id: number): Promise<User> 
+  delete(id: number): Proimse<void>
+}
+
+// main implementstio
+export const useRepository: UseRepositoryPort ={
+  getAll: function (id: number, name: string): Promise<User[]> {
+    throw new Error("Function not implemented.");
+  },
+  getById: function (id: number): Promise<User> {
+    throw new Error("Function not implemented.");
+  },
+  delete: function (id: number) {
+    throw new Error("Function not implemented.");
+  }
+}
+
+
+// usecase
+export const getUserById = (repo: Pick<UseRepositoryPort, "getById">, id: number) => {
+  //
+  return repo.getById(id);
+}
