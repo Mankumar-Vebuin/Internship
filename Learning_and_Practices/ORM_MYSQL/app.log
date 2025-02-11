@@ -1,0 +1,312 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:11:50.669Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:12:48.414Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:12:58.232Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:12:58.325Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:13:02.457Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:13:02.526Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:13:06.120Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:13:06.205Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:13:11.094Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:13:11.174Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:13:53.818Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:13:53.900Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:14:31.828Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:14:31.911Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:18:43.669Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:18:43.748Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:19:20.625Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:19:20.695Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:19:26.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:19:26.363Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:19:29.703Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:19:29.792Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/\",\"status\":\"200\",\"responseTime\":\"8.085\"}","timestamp":"2025-02-04T09:19:39.496Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/users/\",\"status\":\"201\",\"responseTime\":\"43.241\"}","timestamp":"2025-02-04T09:19:59.769Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"PATCH\",\"url\":\"/users/6\",\"status\":\"200\",\"responseTime\":\"28.289\"}","timestamp":"2025-02-04T09:20:48.017Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/\",\"status\":\"200\",\"responseTime\":\"2.447\"}","timestamp":"2025-02-04T09:20:58.531Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"PATCH\",\"url\":\"/users/6\",\"status\":\"200\",\"responseTime\":\"31.546\"}","timestamp":"2025-02-04T09:22:09.846Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/\",\"status\":\"200\",\"responseTime\":\"2.708\"}","timestamp":"2025-02-04T09:22:21.104Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/6\",\"status\":\"200\",\"responseTime\":\"3.218\"}","timestamp":"2025-02-04T09:22:28.597Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:25:43.082Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:25:43.173Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:25:54.095Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:25:54.171Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:25:58.166Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:25:58.240Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:36:31.899Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:36:31.986Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"2.631\"}","timestamp":"2025-02-04T09:36:38.341Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/welcome.html\",\"status\":\"404\",\"responseTime\":\"0.813\"}","timestamp":"2025-02-04T09:36:47.697Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/templates/welcome.html\",\"status\":\"404\",\"responseTime\":\"0.713\"}","timestamp":"2025-02-04T09:37:00.768Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:37:36.266Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:37:36.350Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/templates/welcome.html\",\"status\":\"200\",\"responseTime\":\"2.464\"}","timestamp":"2025-02-04T09:37:36.905Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/favicon.ico\",\"status\":\"404\",\"responseTime\":\"1.450\"}","timestamp":"2025-02-04T09:37:36.935Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:37:47.966Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:37:48.044Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:37:53.172Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:37:53.258Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:37:59.166Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:37:59.244Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:02.640Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:02.708Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:05.228Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:05.302Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:07.881Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:07.955Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:11.006Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:11.081Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:21.424Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:21.498Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:25.987Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:26.065Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:29.817Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:29.898Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:38.217Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:38.288Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:44.497Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:44.567Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:49.665Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:49.752Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:52.679Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:52.756Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:56.092Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:56.163Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T09:38:58.643Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T09:38:58.727Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T10:19:44.369Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T10:19:44.453Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:32:56.094Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:32:56.185Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:36:53.172Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:36:53.282Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:37:53.713Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:37:53.790Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:38:59.157Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:38:59.237Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:39:02.233Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:39:02.315Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:40:26.705Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:40:26.779Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:40:29.590Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:40:29.665Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:40:38.294Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:40:38.371Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:40:41.823Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:40:41.897Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:40:51.850Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:40:51.954Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:41:24.097Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:41:24.175Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:41:29.900Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:41:29.977Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:41:33.017Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:41:33.093Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:42:00.184Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:42:00.258Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:42:03.925Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:42:04.000Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:42:08.045Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:42:08.135Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"2.511\"}","timestamp":"2025-02-04T12:42:25.257Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:42:56.599Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:42:56.694Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:42:59.857Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:42:59.941Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:43:10.961Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:43:11.047Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:43:13.567Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:43:13.642Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:43:17.217Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:43:17.298Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:43:20.993Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:43:21.069Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:45:16.700Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:45:16.787Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:45:41.589Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:45:41.669Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:45:51.994Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:45:52.079Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:47:22.293Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:47:22.371Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:47:39.032Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:47:39.104Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:47:46.304Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:47:46.385Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:49:36.435Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:49:36.509Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:49:40.561Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:49:40.632Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:50:12.234Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:50:12.310Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:51:43.245Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:51:43.332Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:51:47.197Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:51:47.272Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:52:03.024Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:52:03.098Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:52:37.805Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:52:37.889Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:52:45.327Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:52:45.400Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-04T12:52:50.784Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-04T12:52:50.858Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"responseTime\":\"3.221\"}","timestamp":"2025-02-04T12:52:50.963Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"0.672\"}","timestamp":"2025-02-04T12:52:50.977Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"3.206\"}","timestamp":"2025-02-04T12:52:50.979Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"3.948\"}","timestamp":"2025-02-04T12:52:50.980Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"4.691\"}","timestamp":"2025-02-04T12:52:50.981Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"0.537\"}","timestamp":"2025-02-04T12:52:51.042Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"responseTime\":\"1.072\"}","timestamp":"2025-02-04T12:53:20.266Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"0.497\"}","timestamp":"2025-02-04T12:53:20.282Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"2.921\"}","timestamp":"2025-02-04T12:53:20.283Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"2.897\"}","timestamp":"2025-02-04T12:53:20.283Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"3.081\"}","timestamp":"2025-02-04T12:53:20.284Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"0.572\"}","timestamp":"2025-02-04T12:53:20.334Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:17:48.534Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:17:48.682Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"5.429\"}","timestamp":"2025-02-05T04:17:59.220Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"304\",\"responseTime\":\"3.755\"}","timestamp":"2025-02-05T04:18:03.187Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"1.508\"}","timestamp":"2025-02-05T04:18:03.226Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"6.394\"}","timestamp":"2025-02-05T04:18:03.229Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"6.377\"}","timestamp":"2025-02-05T04:18:03.230Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"7.037\"}","timestamp":"2025-02-05T04:18:03.232Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:35:27.688Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:35:27.842Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:35:39.621Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:35:39.744Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:35:54.336Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:35:54.439Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:36:08.820Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:36:08.925Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:36:18.020Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:36:18.160Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:36:24.958Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:36:25.061Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:36:46.674Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:36:46.816Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:36:54.641Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:36:54.772Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:37:11.153Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:37:11.263Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:37:24.561Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:37:24.690Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:37:36.556Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:41:54.779Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:41:54.888Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:42:41.244Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:42:41.387Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:43:22.625Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:43:22.756Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:43:32.609Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:43:32.722Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:43:43.750Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:43:43.879Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:43:51.710Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:43:51.844Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:45:37.167Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:45:37.286Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:45:52.543Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:45:52.647Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:46:59.103Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:46:59.236Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:47:27.633Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:47:27.812Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:47:43.988Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:47:44.095Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:48:12.223Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:48:12.330Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:48:20.439Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:48:20.565Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:48:39.397Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:48:39.502Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:48:42.890Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:48:42.988Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:48:49.928Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:48:50.035Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:49:00.812Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:49:00.909Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:50:53.551Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:50:53.683Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:56:14.006Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:56:14.133Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:56:19.343Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:56:19.482Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T04:57:12.919Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T04:57:13.055Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:04:11.260Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:04:11.434Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:04:20.432Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:04:20.562Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:04:29.367Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:04:29.481Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:06:59.890Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:07:00.023Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:17:36.394Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:17:36.517Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:19:57.814Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:19:57.961Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:24:13.047Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:24:13.178Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"7.003\"}","timestamp":"2025-02-05T05:24:31.257Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api\",\"status\":\"301\",\"responseTime\":\"1.927\"}","timestamp":"2025-02-05T05:24:34.972Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"200\",\"responseTime\":\"3.373\"}","timestamp":"2025-02-05T05:24:34.981Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"200\",\"responseTime\":\"2.818\"}","timestamp":"2025-02-05T05:24:35.024Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"200\",\"responseTime\":\"10.527\"}","timestamp":"2025-02-05T05:24:35.032Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"200\",\"responseTime\":\"10.493\"}","timestamp":"2025-02-05T05:24:35.035Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"200\",\"responseTime\":\"10.170\"}","timestamp":"2025-02-05T05:24:35.043Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"200\",\"responseTime\":\"2.067\"}","timestamp":"2025-02-05T05:24:35.424Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:25:03.739Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"304\",\"responseTime\":\"26.348\"}","timestamp":"2025-02-05T05:25:03.824Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:25:03.851Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"9.246\"}","timestamp":"2025-02-05T05:25:03.853Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"4.172\"}","timestamp":"2025-02-05T05:25:03.854Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"4.617\"}","timestamp":"2025-02-05T05:25:03.856Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"6.763\"}","timestamp":"2025-02-05T05:25:03.857Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"0.823\"}","timestamp":"2025-02-05T05:25:03.953Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:25:22.615Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:25:22.751Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/api-docs/\",\"status\":\"404\",\"responseTime\":\"4.331\"}","timestamp":"2025-02-05T05:25:27.537Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"304\",\"responseTime\":\"3.788\"}","timestamp":"2025-02-05T05:25:30.764Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"4.485\"}","timestamp":"2025-02-05T05:25:30.801Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"4.779\"}","timestamp":"2025-02-05T05:25:30.804Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"7.937\"}","timestamp":"2025-02-05T05:25:30.806Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"8.952\"}","timestamp":"2025-02-05T05:25:30.808Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"1.463\"}","timestamp":"2025-02-05T05:25:30.939Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:28:16.836Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:28:16.970Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"304\",\"responseTime\":\"5.119\"}","timestamp":"2025-02-05T05:28:18.214Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"4.791\"}","timestamp":"2025-02-05T05:28:18.253Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"5.396\"}","timestamp":"2025-02-05T05:28:18.255Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"6.464\"}","timestamp":"2025-02-05T05:28:18.257Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"200\",\"responseTime\":\"7.555\"}","timestamp":"2025-02-05T05:28:18.260Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"1.210\"}","timestamp":"2025-02-05T05:28:18.398Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:28:49.214Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:28:49.349Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"304\",\"responseTime\":\"5.278\"}","timestamp":"2025-02-05T05:28:51.986Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"6.086\"}","timestamp":"2025-02-05T05:28:52.021Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"7.144\"}","timestamp":"2025-02-05T05:28:52.024Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"10.316\"}","timestamp":"2025-02-05T05:28:52.028Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"200\",\"responseTime\":\"1.424\"}","timestamp":"2025-02-05T05:28:52.033Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"1.401\"}","timestamp":"2025-02-05T05:28:52.156Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/\",\"status\":\"304\",\"responseTime\":\"2.469\"}","timestamp":"2025-02-05T05:28:55.256Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui.css\",\"status\":\"304\",\"responseTime\":\"4.030\"}","timestamp":"2025-02-05T05:28:55.297Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-bundle.js\",\"status\":\"304\",\"responseTime\":\"3.968\"}","timestamp":"2025-02-05T05:28:55.299Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-standalone-preset.js\",\"status\":\"304\",\"responseTime\":\"4.686\"}","timestamp":"2025-02-05T05:28:55.300Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/swagger-ui-init.js\",\"status\":\"304\",\"responseTime\":\"5.290\"}","timestamp":"2025-02-05T05:28:55.302Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user-api/favicon-32x32.png\",\"status\":\"304\",\"responseTime\":\"0.942\"}","timestamp":"2025-02-05T05:28:55.398Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user\",\"status\":\"200\",\"responseTime\":\"15.979\"}","timestamp":"2025-02-05T05:29:43.106Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user/0\",\"status\":\"404\",\"responseTime\":\"11.230\"}","timestamp":"2025-02-05T05:31:48.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:34:25.195Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:34:25.324Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:34:33.891Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:34:33.991Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user/6\",\"status\":\"200\",\"responseTime\":\"24.188\"}","timestamp":"2025-02-05T05:34:41.734Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T05:46:39.930Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T05:46:40.061Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T08:41:39.694Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T08:41:39.834Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:3000","timestamp":"2025-02-05T08:49:27.769Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-05T08:49:27.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on http://localhost:5000","timestamp":"2025-02-06T06:07:34.559Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully!","timestamp":"2025-02-06T06:07:34.891Z"}

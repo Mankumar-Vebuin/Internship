@@ -3,6 +3,12 @@ import DB from "../db/dbConnection.ts";
 import bcrypt from "bcryptjs";
 import { ResultSetHeader } from "mysql2/promise";
 
+/**
+ *  Register user
+ * @param req 
+ * @param res 
+ * @returns 
+ */
 export default async function registerUser(req: Request, res: Response) {
   const { email, password } = req.body;
     
